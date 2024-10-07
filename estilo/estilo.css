@@ -1,29 +1,32 @@
  /* datos personales Óscar Cervero Luiña UO295432*/
  /* Especificidad: 001*/
  body {
-    font-family: Century Gothic;
-    color:#116530;
-    background-color: #21B6A8;
+    font-family: Verdana, sans-serif;
+    color: #333652;
+    background-color: #E9EAEC;
  }
+
  /* Especificidad: 001*/
- header{
-    background-color:#A3EBB1;
+ header {
+    color:#FAD02C;
+    background-color:#333652;
  }
+
  /* Especificidad: 001*/
- nav{
-    color:#18A558;
+ main{
+
  }
+
+  /* Especificidad: 001*/
+ aside{
+   color:#C0D0DD;
+   background-color:#333652;
+ }
+
+ /* Especificidad: 001*/
+ nav {
+ }
+
  /* Especificidad: 001*/
  h1 {
-    color:#18A558;
- }
-
- /* Especificidad: 001*/
- h3 {
-    color:#18A558;
- }
-
- /* Especificidad: 001*/
- p {
-    color:#18A558;
  }
