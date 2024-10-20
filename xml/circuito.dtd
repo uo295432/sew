@@ -1,6 +1,6 @@
-<!ELEMENT circuito (nombre,longitud,anchuraMedia,fecha,hora,vueltas,localidad,país,referencias,fotografías,vídeos,coordenadas,tramos)>
+<!ELEMENT circuito (nombre,longitudTotal,anchuraMedia,fecha,hora,vueltas,localidad,país,referencias,fotografías,vídeos,coordenadas,tramos)>
 <!ELEMENT nombre (#PCDATA)>
-<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT longitudTotal (#PCDATA)>
 <!ELEMENT anchuraMedia (#PCDATA)>
 <!ELEMENT fecha (#PCDATA)>
 <!ELEMENT hora (#PCDATA)>
@@ -11,14 +11,35 @@
 <!ELEMENT referencia (#PCDATA)>
 <!ELEMENT fotografías (fotografía*)>
 <!ELEMENT fotografía (#PCDATA)>
-<!ELEMENT vídeos (video*)>
-<!ELEMENT video (#PCDATA)>
-<!ELEMENT coordenadas (coordenada*)>
-<!ELEMENT coordenada ()>
+<!ELEMENT vídeos (vídeo*)>
+<!ELEMENT vídeo (#PCDATA)>
+<!ELEMENT coordenadas (longitud,latitud,altura)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altura (#PCDATA)>
 <!ELEMENT tramos (tramo*)>
-<!ATTLIST longitud 
+<!ELEMENT tramo (distancia,coordenadas,sector)>
+<!ELEMENT distancia (#PCDATA)>
+<!ELEMENT sector (#PCDATA)>
+<!ATTLIST longitudTotal 
 	unidad CDATA #REQUIRED>
 <!ATTLIST anchuraMedia
 	unidad CDATA #REQUIRED>
-<!ATTLIST hora
-	prefijo CDATA #REQUIRED>
+<!ATTLIST fotografía
+	descripción CDATA #REQUIRED>
+<!ATTLIST vídeo
+    descripción CDATA #REQUIRED>
+<!ATTLIST longitud
+    grados CDATA #REQUIRED
+    minutos CDATA #REQUIRED
+    segundos CDATA #REQUIRED
+	hemisferio CDATA #REQUIRED>
+<!ATTLIST latitud
+    grados CDATA #REQUIRED
+    minutos CDATA #REQUIRED
+    segundos CDATA #REQUIRED
+	hemisferio CDATA #REQUIRED>
+<!ATTLIST altura
+	unidad CDATA #REQUIRED>
+<!ATTLIST distancia
+	unidad CDATA #REQUIRED>

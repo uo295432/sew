@@ -1,1 +1,282 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito>
+    <nombre>
+        Bakú City
+    </nombre>
+    <longitudTotal unidad="km">
+        6,003
+    </longitudTotal>
+    <anchuraMedia unidad="m">
+        Entre 13 en las partes más anchas y 7,5 en las más estrechas
+    </anchuraMedia>
+    <fecha>
+        15 de Septiembre de 2024
+    </fecha>
+    <hora>
+        13:00
+    </hora>
+    <vueltas>
+        51
+    </vueltas>
+    <localidad>
+        Bakú
+    </localidad>
+    <país>
+        Azerbaiyán
+    </país>
+    <referencias>
+        <referencia>https://es.wikipedia.org/wiki/Circuito_callejero_de_Bak%C3%BA</referencia>
+        <referencia>https://www.circuitosdecarreras.com/azerbaiyan/circuito-callejero-baku/</referencia>
+        <referencia>https://www.elmundo.es/deportes/formula-1/2023/04/29/6448fa26e4d4d80a1c8b45c2.html</referencia>
+    </referencias>
+    <fotografías>
+        <fotografía descripción="Foto del circuito con un castillo de fondo">castillo.jpg</fotografía>
+    </fotografías>
+    <vídeos>
+
+    </vídeos>
+    <coordenadas>
+        <longitud grados="49" minutos="50" segundos="59" hemisferio="E"></longitud>
+        <latitud grados="40" minutos="22" segundos="17" hemisferio="N"></latitud>
+        <altura unidad="m">-24</altura>
+    </coordenadas>
+    <tramos>
+        <tramo>
+            <distancia unidad="m">499,3</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="51" segundos="18" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="24" hemisferio="N"></latitud>
+                <altura unidad="m">-25</altura>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">336,77</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="51" segundos="12" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="34" hemisferio="N"></latitud>
+                <altura unidad="m">-23</altura>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">604,9</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="48" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="26" hemisferio="N"></latitud>
+                <altura unidad="m">-22</altura>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">222,62</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="52" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="19" hemisferio="N"></latitud>
+                <altura unidad="m">-24</altura>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">431,93</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="35" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="13" hemisferio="N"></latitud>
+                <altura unidad="m">-23</altura>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">139,76</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="31" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="11" hemisferio="N"></latitud>
+                <altura unidad="m">-23</altura>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">31,17</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="29" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="10" hemisferio="N"></latitud>
+                <altura unidad="m">-23</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">57,08</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="30" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="08" hemisferio="N"></latitud>
+                <altura unidad="m">-24</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">394,64</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="17" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="00" hemisferio="N"></latitud>
+                <altura unidad="m">-24</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">206,04</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="14" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="07" hemisferio="N"></latitud>
+                <altura unidad="m">-19</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">21,18</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="13" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="07" hemisferio="N"></latitud>
+                <altura unidad="m">-17</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">27,2</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="12" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="07" hemisferio="N"></latitud>
+                <altura unidad="m">-16</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">49,93</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="10" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="07" hemisferio="N"></latitud>
+                <altura unidad="m">-14</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">67,55</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="09" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="09" hemisferio="N"></latitud>
+                <altura unidad="m">-16</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">121,2</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="04" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="08" hemisferio="N"></latitud>
+                <altura unidad="m">-9</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">278</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="49" segundos="54" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="04" hemisferio="N"></latitud>
+                <altura unidad="m">2</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">209,73</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="49" segundos="51" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="21" segundos="57" hemisferio="N"></latitud>
+                <altura unidad="m">1</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">242,47</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="49" segundos="51" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="21" segundos="49" hemisferio="N"></latitud>
+                <altura unidad="m">-4</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">315,34</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="04" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="21" segundos="45" hemisferio="N"></latitud>
+                <altura unidad="m">-24</altura>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">71,18</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="07" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="21" segundos="45" hemisferio="N"></latitud>
+                <altura unidad="m">-25</altura>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">63,26</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="07" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="21" segundos="47" hemisferio="N"></latitud>
+                <altura unidad="m">-25</altura>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">120,66</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="09" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="21" segundos="51" hemisferio="N"></latitud>
+                <altura unidad="m">-25</altura>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">234,59</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="17" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="21" segundos="56" hemisferio="N"></latitud>
+                <altura unidad="m">-24</altura>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">150,83</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="18" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="01" hemisferio="N"></latitud>
+                <altura unidad="m">-24</altura>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">381,72</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="30" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="08" hemisferio="N"></latitud>
+                <altura unidad="m">-25</altura>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">728,42</distancia>
+            <coordenadas>
+                <longitud grados="49" minutos="50" segundos="59" hemisferio="E"></longitud>
+                <latitud grados="40" minutos="22" segundos="17" hemisferio="N"></latitud>
+                <altura unidad="m">-24</altura>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+    </tramos>
+</circuito>
+
+    
