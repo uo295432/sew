@@ -1,45 +1,32 @@
 class País{
-    nombre;
-    capital;
-    circuito;
-    población;
-    gobierno;
-    coordenadas;
-    religión;
-    constructor(nombre,capital,población) {
+    constructor(nombre,capital,poblacion) {
         this.nombre=nombre;
         this.capital=capital;
-        this.población=población;
+        this.poblacion=poblacion;
     }
     rellenar(){
         this.circuito="Baku City";
         this.gobierno="República semipresidencialista";
         this.coordenadas="40°22′21″ N, 49°51′11.88″ E";
-        this.religión="Islam";
+        this.religion="Islam";
     }
-    informaciónPrincipal(){
+    informacionPrincipal(){
         document.write("<p>"+this.nombre+"  "+this.capital+"</p>");
     }
     getNombre(){
-        return this.nombre;
+        return "Nombre del país:"+this.nombre;
     }
     getCapital(){
-        return this.capital;
+        return "Nombre de la capital:"+this.capital;
     }
-    getCircuito(){
 
+    informacionSecundaria(){
+        return ("<ul><li>Nombre del circuito:"+this.circuito+"</li><li>Tipo de gobierno:"+this.gobierno+"</li>\
+        <li>Cantidad de población:"+this.poblacion+"</li><li>Religión mayoritaria:"+this.religion+"</li></ul>");
     }
-    getPoblación(){
 
-    }
-    getGobierno(){
-
-    }
-    getCoordenadas(){
-
-    }
-    getReligión(){
-
+    escribeCoordenadas(){
+        document.write("<p>Las coordenadas de la línea de meta del circuito son: "+this.coordenadas+"</p>");
     }
 
 }

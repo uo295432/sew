@@ -5,6 +5,7 @@
    <!-- Datos que describen el documento -->
    <meta charset="UTF-8" />
    <title> Meteorologia</title>
+   <script src="js/pais.js"></script>
    <meta name="author" content="Óscar Cervero Luiña" />
    <meta name="description" content="Meteorología de las próximas carreras" />
    <meta name="keywords" content="meteorología,tiempo" />
@@ -31,7 +32,17 @@
    <p>Estás en:<a href="index.html">Inicio</a>/ Meteorologia</p>
    <main>
       <h2> Meteorologia</h2>
-      <p> En desarrollo</p>
+      <script>
+      var Pais=new País("Azerbaiyán","Bakú","10412652 habitantes");
+      Pais.rellenar();
+      document.write("<section>");
+      document.write("<h3>Información del país y el circuito</h3>");
+      document.write("<p>"+Pais.getNombre()+"</p>");
+      document.write("<p>"+Pais.getCapital()+"</p>");
+      document.write(Pais.informacionSecundaria());
+      Pais.escribeCoordenadas();
+      document.write("</section>");
+      </script>
    </main>
 </body>
 
