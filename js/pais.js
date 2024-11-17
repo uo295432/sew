@@ -1,4 +1,5 @@
 class País{
+    //preguntar sobre si se debería poner var a las cosas antes de meterlas al constructor, también con lo de memoria.js
     constructor(nombre,capital,poblacion) {
         this.nombre=nombre;
         this.capital=capital;
