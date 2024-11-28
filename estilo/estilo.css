@@ -21,7 +21,8 @@
    max-width: 50vw;
  }
 
- h1{
+ /* Especificidad: 002*/
+ h1 a{
    text-decoration: none;
  }
 
@@ -41,6 +42,26 @@
  nav {
  }
 
- /* Especificidad: 001*/
- h1 {
+ @media (max-width: 36rem) { 
+   /* Especificidad: 001*/
+   body {
+     font-size: 0.875rem; 
+   }
+ 
+   /* Especificidad: 001*/
+   p {
+     max-width: 90vw; 
+   }
+ }
+ 
+ @media (max-width: 48rem) { 
+   /* Especificidad: 001*/
+   body {
+     font-size: 1rem; 
+   }
+ 
+   /* Especificidad: 001*/
+   p {
+     max-width: 80vw;
+   }
  }
