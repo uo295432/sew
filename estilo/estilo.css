@@ -20,6 +20,7 @@
  /* Especificidad: 001*/
  pre{
    max-width: 50vw;
+   font-size: 1rem;
  }
 
  /* Especificidad: 002*/
@@ -52,6 +53,7 @@
 
    /* Especificidad: 001*/
    pre {
+      font-size: 0.875rem; 
       max-width: 90vw; 
     }
  }
@@ -69,6 +71,7 @@
 
    /* Especificidad: 001*/
    pre {
+      font-size: 1rem; 
       max-width: 80vw;
     }
  }
