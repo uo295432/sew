@@ -15,12 +15,7 @@
  /* Especificidad: 001*/
  p{
    max-width: 50vw;
- }
-
- /* Especificidad: 001*/
- pre{
-   max-width: 50vw;
-   font-size: 1rem;
+   white-space: pre-wrap;
  }
 
  /* Especificidad: 002*/
@@ -50,12 +45,6 @@
    p {
      max-width: 90vw; 
    }
-
-   /* Especificidad: 001*/
-   pre {
-      font-size: 0.875rem; 
-      max-width: 90vw; 
-    }
  }
  
  @media (max-width: 48rem) { 
@@ -68,10 +57,4 @@
    p {
      max-width: 80vw;
    }
-
-   /* Especificidad: 001*/
-   pre {
-      font-size: 1rem; 
-      max-width: 80vw;
-    }
  }
