@@ -24,9 +24,10 @@
   }
 
   /* Especificidad: 001*/
- picture {
-   width:80%;
+ img {
+   width:100%;
    height:auto;
+   max-width: 100%;
   }
 
   /* Especificidad: 001*/
