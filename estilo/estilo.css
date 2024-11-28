@@ -24,13 +24,6 @@
   }
 
   /* Especificidad: 001*/
- img {
-   width:20%;
-   height:auto;
-   max-width: 20%;
-  }
-
-  /* Especificidad: 001*/
  aside{
    color:#C0D0DD;
    background-color:#333652;
