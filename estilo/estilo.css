@@ -17,6 +17,10 @@
 
  }
 
+ p{
+   width:60%;
+ }
+
  /* Especificidad: 001*/
  video {
    width:100%;
