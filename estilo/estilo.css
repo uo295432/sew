@@ -20,7 +20,6 @@
  /* Especificidad: 001*/
  pre{
    max-width: 50vw;
-   white-space: pre-wrap;
  }
 
  /* Especificidad: 002*/
@@ -54,7 +53,6 @@
    /* Especificidad: 001*/
    pre {
       max-width: 90vw; 
-      white-space: pre-wrap;
     }
  }
  
@@ -72,6 +70,5 @@
    /* Especificidad: 001*/
    pre {
       max-width: 80vw;
-      white-space: pre-wrap;
     }
  }
