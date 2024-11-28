@@ -17,6 +17,12 @@
 
  }
 
+ /* Especificidad: 001*/
+ video {
+   width:100%;
+   height:auto;
+  }
+
   /* Especificidad: 001*/
  aside{
    color:#C0D0DD;
