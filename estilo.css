@@ -12,11 +12,6 @@
     background-color:#333652;
  }
 
- /* Especificidad: 002*/
- header + p{
-  font-size: 1px;
- }
-
  /* Especificidad: 001*/
  p{
    max-width: 50vw;
@@ -43,6 +38,11 @@
  audio{
   width: 100%;
   max-width: 50vw;
+ }
+
+ /* Especificidad: 002*/
+ header + p{
+  font-size: 1px;
  }
 
  @media (max-width: 36rem) { 
