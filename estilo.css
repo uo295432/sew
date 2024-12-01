@@ -40,9 +40,9 @@
   max-width: 50vw;
  }
 
- /* Especificidad: 002*/
- header + p{
-  font-size: 1px;
+ /* Especificidad: 003*/
+ body > header + p {
+  font-size: 0.7em;
  }
 
  @media (max-width: 36rem) { 
