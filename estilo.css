@@ -63,7 +63,7 @@
 
    /* Especificidad: 002*/
    header + p{
-    font-size: 0.3em;
+    font-size: 0.7em;
    }
  }
  
@@ -85,6 +85,6 @@
 
    /* Especificidad: 002*/
    header + p{
-    font-size: 0.5em;
+    font-size: 0.7em;
    }
  }
