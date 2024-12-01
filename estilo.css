@@ -42,7 +42,7 @@
 
  /* Especificidad: 003*/
  body > header + p {
-  font-size: 0.7em;
+  font-size: 80px;
  }
 
  @media (max-width: 36rem) { 
