@@ -8,8 +8,12 @@
 
  /* Especificidad: 001*/
  header {
-    color:#FAD02C;
     background-color:#333652;
+ }
+
+ h2{
+  font-size: 1.75em;
+  text-decoration: underline;
  }
 
  /* Especificidad: 001*/
@@ -43,6 +47,26 @@
  /* Especificidad: 002*/
  header + p {
   font-size: 0.7em;
+ }
+
+ /* Especificidad: 013*/
+ header>h1>a:link{
+  color:#C0D0DD;
+ }
+
+ /* Especificidad: 013*/
+ header>h1>a:visited{
+  color:#C0D0DD;
+ }
+
+ /* Especificidad: 013*/
+ header>nav>a:link{
+  color:#C0D0DD;
+ }
+
+ /* Especificidad: 013*/
+ header>nav>a:visited{
+  color:#FFFF00;
  }
 
  @media (max-width: 36rem) { 
