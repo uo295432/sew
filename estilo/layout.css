@@ -21,8 +21,8 @@ header>nav>a {
 
 @media (max-width: 36rem) {
 
-    header{
-        flex-flow: column nowrap;
+    header>nav>a {
+        display: block;
     }
 
     /* Especificidad: 002*/
