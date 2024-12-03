@@ -1,19 +1,40 @@
 /* datos personales Óscar Cervero Luiña UO295432*/
-header{
+header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: baseline;
 }
 
-header>h1{
-    flex:1;
-}
-header>nav{
-    flex:2;
+header>h1 {
+    flex: 1;
 }
 
-header>nav>a{
-    flex:1;
-    margin:2em;
+header>nav {
+    flex: 2;
+}
+
+header>nav>a {
+    flex: 1;
+    margin: 2em;
+}
+
+@media (max-width: 36rem) {
+
+    header{
+        flex-flow: column nowrap;
+    }
+
+    /* Especificidad: 002*/
+    header+p {
+        display: none;
+    }
+}
+
+@media (max-width: 48rem) {
+
+    /* Especificidad: 002*/
+    header+p {
+        display: none;
+    }
 }

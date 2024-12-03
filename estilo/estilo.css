@@ -143,11 +143,6 @@
     max-width: 90vw;
    }
 
-   /* Especificidad: 002*/
-   header + p{
-    display: none;
-   }
-
    table{
     width: 90%;
    }
@@ -167,11 +162,6 @@
    /* Especificidad: 001*/
    audio{
     max-width: 80vw;
-   }
-
-   /* Especificidad: 002*/
-   header + p{
-    display: none;
    }
 
    table{
