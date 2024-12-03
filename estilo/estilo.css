@@ -69,6 +69,43 @@
   color:#FFFF00;
  }
 
+ ol{
+  list-style-type: upper-roman;
+  list-style-position: inside;
+ }
+
+ ul{
+  list-style-type: square;
+ }
+
+ dt{
+  font-weight: bold;
+ }
+ 
+ dd{
+  font-size: 0.8em;
+ }
+
+ table{
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 50%;
+  border: 0.2em solid #333652;
+ }
+
+ tbody tr:nth-child(odd) {
+  background-color: #9AD8E4;
+ }
+
+ tbody tr:nth-child(even) {
+  background-color: #CFEAF2;
+ }
+
+ th,td{
+  border: 0.2em solid #333652;
+  text-align: center;
+ }
+
  @media (max-width: 36rem) { 
    /* Especificidad: 001*/
    body {
