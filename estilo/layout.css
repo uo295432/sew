@@ -1,0 +1,17 @@
+/* datos personales Óscar Cervero Luiña UO295432*/
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+header>h1{
+    flex:1;
+}
+header>nav{
+    flex:1;
+}
+
+header>nav>a{
+    flex:1;
+}
