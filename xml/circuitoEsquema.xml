@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuito xmlns="http://www.uniovi.es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
+    <nombre>
+        Bakú City
+    </nombre>
+    <longitudTotal unidad="km">
+        6.003
+    </longitudTotal>
+    <anchuraMedia unidad="m">
+        Entre 13 en las partes más anchas y 7,5 en las más estrechas
+    </anchuraMedia>
+    <fecha>
+        2024-09-15
+    </fecha>
+    <hora>
+        13:00:00
+    </hora>
+    <vueltas>
+        51
+    </vueltas>
+    <localidad>
+        Bakú
+    </localidad>
+    <país>
+        Azerbaiyán
+    </país>
+    <referencias>
+        <referencia>https://es.wikipedia.org/wiki/Circuito_callejero_de_Bak%C3%BA</referencia>
+        <referencia>https://www.circuitosdecarreras.com/azerbaiyan/circuito-callejero-baku/</referencia>
+        <referencia>https://www.elmundo.es/deportes/formula-1/2023/04/29/6448fa26e4d4d80a1c8b45c2.html</referencia>
+    </referencias>
+    <fotografías>
+        <fotografía descripción="Foto del circuito con un castillo de fondo">castillo.jpg</fotografía>
+    </fotografías>
+    <vídeos>
+
+    </vídeos>
+    <coordenadas>
+        <longitud>49.8499242</longitud>
+        <latitud>40.3715495</latitud>
+        <altitud>-0.2889786</altitud>
+    </coordenadas>
+    <tramos>
+        <tramo>
+            <distancia unidad="m">499.3</distancia>
+            <coordenadas>
+                <longitud>49.8552053</longitud>
+                <latitud>40.3734205</latitud>
+                <altitud>-0.5166922</altitud>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">336.77</distancia>
+            <coordenadas>
+                <longitud>49.8535311</longitud>
+                <latitud>40.3761200</latitud>
+                <altitud>-0.6408335</altitud>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">604.9</distancia>
+            <coordenadas>
+                <longitud>49.8468765</longitud>
+                <latitud>40.3740025</latitud>
+                <altitud>-0.8064461</altitud>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">222.62</distancia>
+            <coordenadas>
+                <longitud>49.8479260</longitud>
+                <latitud>40.3721586</latitud>
+                <altitud>-0.5166671</altitud>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">431.93</distancia>
+            <coordenadas>
+                <longitud>49.8431756</longitud>
+                <latitud>40.3704270</latitud>
+                <altitud>-0.8065115</altitud>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">139.76</distancia>
+            <coordenadas>
+                <longitud>49.8420897</longitud>
+                <latitud>40.3698760</latitud>
+                <altitud>-0.8070206</altitud>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">31.17</distancia>
+            <coordenadas>
+                <longitud>49.8416159</longitud>
+                <latitud>40.3695684</latitud>
+                <altitud>-0.8070206</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">57.08</distancia>
+            <coordenadas>
+                <longitud>49.8418951</longitud>
+                <latitud>40.3690948</latitud>
+                <altitud>-0.8070206</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">394.64</distancia>
+            <coordenadas>
+                <longitud>49.8381919</longitud>
+                <latitud>40.3669391</latitud>
+                <altitud>-0.8064940</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">206.04</distancia>
+            <coordenadas>
+                <longitud>49.8373143</longitud>
+                <latitud>40.3686606</latitud>
+                <altitud>-0.5167021</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">21.18</distancia>
+            <coordenadas>
+                <longitud>49.8370660</longitud>
+                <latitud>40.3686672</latitud>
+                <altitud>-0.5167021</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">27.2</distancia>
+            <coordenadas>
+                <longitud>49.8368503</longitud>
+                <latitud>40.3687969</latitud>
+                <altitud>-0.5167021</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">49.93</distancia>
+            <coordenadas>
+                <longitud>49.8362335</longitud>
+                <latitud>40.3688462</latitud>
+                <altitud>-0.5166372</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">67.55</distancia>
+            <coordenadas>
+                <longitud>49.8359479</longitud>
+                <latitud>40.3693864</latitud>
+                <altitud>-0.5167383</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">121.2</distancia>
+            <coordenadas>
+                <longitud>49.8345362</longitud>
+                <latitud>40.3690597</latitud>
+                <altitud>2.1271189</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">278</distancia>
+            <coordenadas>
+                <longitud>49.8317231</longitud>
+                <latitud>40.3678778</latitud>
+                <altitud>2.4244253</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">209.73</distancia>
+            <coordenadas>
+                <longitud>49.8309094</longitud>
+                <latitud>40.3660536</latitud>
+                <altitud>2.9066299</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">242.47</distancia>
+            <coordenadas>
+                <longitud>49.8310828</longitud>
+                <latitud>40.3638177</latitud>
+                <altitud>-0.1883513</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">315.34</distancia>
+            <coordenadas>
+                <longitud>49.8345096</longitud>
+                <latitud>40.3625879</latitud>
+                <altitud>-0.5167078</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">71.18</distancia>
+            <coordenadas>
+                <longitud>49.8352473</longitud>
+                <latitud>40.3625639</latitud>
+                <altitud>-0.5167078</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">63.26</distancia>
+            <coordenadas>
+                <longitud>49.8353711</longitud>
+                <latitud>40.3631761</latitud>
+                <altitud>-0.5167078</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">120.66</distancia>
+            <coordenadas>
+                <longitud>49.8359120</longitud>
+                <latitud>40.3640526</latitud>
+                <altitud>-0.5166895</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">234.59</distancia>
+            <coordenadas>
+                <longitud>49.8380386</longitud>
+                <latitud>40.3655791</latitud>
+                <altitud>-0.5107094</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">150.83</distancia>
+            <coordenadas>
+                <longitud>49.8384766</longitud>
+                <latitud>40.3669108</latitud>
+                <altitud>-0.5166841</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">381.72</distancia>
+            <coordenadas>
+                <longitud>49.8418323</longitud>
+                <latitud>40.3689230</latitud>
+                <altitud>-0.8065870</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidad="m">728.42</distancia>
+            <coordenadas>
+                <longitud>49.8499242</longitud>
+                <latitud>40.3715495</latitud>
+                <altitud>-0.2889786</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+    </tramos>
+</circuito>
+
+    

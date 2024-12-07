@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark><name>
+Punto1
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8552053,40.3734205,-0.5166922
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto2
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8535311,40.3761200,-0.6408335
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto3
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8468765,40.3740025,-0.8064461
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto4
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8479260,40.3721586,-0.5166671
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto5
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8431756,40.3704270,-0.8065115
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto6
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8420897,40.3698760,-0.8070206
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto7
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8416159,40.3695684,-0.8070206
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto8
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8418951,40.3690948,-0.8070206
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto9
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8381919,40.3669391,-0.8064940
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto10
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8373143,40.3686606,-0.5167021
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto11
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8370660,40.3686672,-0.5167021
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto12
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8368503,40.3687969,-0.5167021
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto13
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8362335,40.3688462,-0.5166372
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto14
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8359479,40.3693864,-0.5167383
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto15
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8345362,40.3690597,2.1271189
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto16
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8317231,40.3678778,2.4244253
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto17
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8309094,40.3660536,2.9066299
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto18
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8310828,40.3638177,-0.1883513
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto19
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8345096,40.3625879,-0.5167078
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto20
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8352473,40.3625639,-0.5167078
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto21
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8353711,40.3631761,-0.5167078
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto22
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8359120,40.3640526,-0.5166895
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto23
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8380386,40.3655791,-0.5107094
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto24
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8384766,40.3669108,-0.5166841
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto25
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8418323,40.3689230,-0.8065870
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><Placemark><name>
+Punto26
+</name><description>
+Circuito de Bakú
+</description><Point><coordinates>
+49.8499242,40.3715495,-0.2889786
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></Point></Placemark><name>
+Circuito Bakú
+</name><Placemark><LineString><extrude>
+1
+</extrude><tessellation>
+1
+</tessellation><coordinates>
+49.8552053,40.3734205,-0.5166922
+49.8535311,40.3761200,-0.6408335
+49.8468765,40.3740025,-0.8064461
+49.8479260,40.3721586,-0.5166671
+49.8431756,40.3704270,-0.8065115
+49.8420897,40.3698760,-0.8070206
+49.8416159,40.3695684,-0.8070206
+49.8418951,40.3690948,-0.8070206
+49.8381919,40.3669391,-0.8064940
+49.8373143,40.3686606,-0.5167021
+49.8370660,40.3686672,-0.5167021
+49.8368503,40.3687969,-0.5167021
+49.8362335,40.3688462,-0.5166372
+49.8359479,40.3693864,-0.5167383
+49.8345362,40.3690597,2.1271189
+49.8317231,40.3678778,2.4244253
+49.8309094,40.3660536,2.9066299
+49.8310828,40.3638177,-0.1883513
+49.8345096,40.3625879,-0.5167078
+49.8352473,40.3625639,-0.5167078
+49.8353711,40.3631761,-0.5167078
+49.8359120,40.3640526,-0.5166895
+49.8380386,40.3655791,-0.5107094
+49.8384766,40.3669108,-0.5166841
+49.8418323,40.3689230,-0.8065870
+49.8499242,40.3715495,-0.2889786
+49.8552053,40.3734205,-0.5166922
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></LineString><Style><LineStyle><color>
+#ff0000ff
+</color><width>
+5
+</width></LineStyle></Style></Placemark></Document></kml>
