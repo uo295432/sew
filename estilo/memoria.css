@@ -75,6 +75,7 @@ article img {
     }
     article {
         height: 10vh;
+        aspect-ratio: 1 / 1;
     }
     article h3 {
         font-size: 0.7em;
