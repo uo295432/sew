@@ -32,7 +32,10 @@ button{
     background: #1C7CCC;
     border: 0.1em solid #000;
     font-size: 1.5em;
-    flex: 0 0 100%; 
+    flex: 0 0 auto; /* Permite al botón ajustar su tamaño a su contenido o límites */
+    width: 100%; /* Ocupa toda la línea */
+    max-width: 7rem; /* Limita el tamaño visible del botón */
+    margin: 0 auto; /* Centra el botón horizontalmente si es más pequeño que la línea */
     text-align: center;
 }
 
@@ -94,7 +97,7 @@ article img {
     }
     article {
         width: 20%;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 1 / 1.5;
     }
     article h3 {
         font-size: 0.8em;
