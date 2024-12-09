@@ -11,6 +11,7 @@
     background-color:#333652;
  }
 
+ /* Especificidad: 001*/
  h2{
   font-size: 1.75em;
   text-decoration: underline;
@@ -26,6 +27,7 @@
    text-decoration: none;
  }
 
+ /* Especificidad: 002*/
  nav a{
    text-decoration: none;
  }
@@ -48,6 +50,7 @@
   max-width: 50vw;
  }
 
+ /* Especificidad: 001*/
  image{
   width: 100%;
  }
@@ -77,23 +80,28 @@
   color:#C0D0DD;
  }
 
+ /* Especificidad: 001*/
  ol{
   list-style-type: upper-roman;
   list-style-position: inside;
  }
 
+ /* Especificidad: 001*/
  ul{
   list-style-type: square;
  }
 
+ /* Especificidad: 001*/
  dt{
   font-weight: bold;
  }
  
+ /* Especificidad: 001*/
  dd{
   font-size: 0.8em;
  }
 
+ /* Especificidad: 001*/
  table{
   table-layout: fixed;
   border-collapse: collapse;
@@ -101,32 +109,39 @@
   border: 0.2em solid #333652;
  }
 
+ /* Especificidad: 012*/
  tbody tr:nth-child(odd) {
   background-color: #9AD8E4;
  }
 
+ /* Especificidad: 012*/
  tbody tr:nth-child(even) {
   background-color: #CFEAF2;
  }
 
+ /* Especificidad: 001*/
  th,td{
   border: 0.2em solid #333652;
   text-align: center;
  }
 
+ /* Especificidad: 001*/
  caption{
   font-size: 1.2em;
   font-weight: bold;
  }
 
+ /* Especificidad: 011*/
  a.active{
   text-decoration: underline;
  }
 
+ /* Especificidad: 021*/
  a:link.active{
   color:#FFFF00;
  }
 
+ /* Especificidad: 021*/
  a:visited.active{
   color:#FFFF00;
  }
@@ -147,6 +162,7 @@
     max-width: 90vw;
    }
 
+   /* Especificidad: 001*/
    table{
     width: 90%;
    }
@@ -168,6 +184,7 @@
     max-width: 80vw;
    }
 
+   /* Especificidad: 001*/
    table{
     width: 70%;
    }

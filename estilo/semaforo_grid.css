@@ -1,0 +1,89 @@
+/* datos personales Óscar Cervero Luiña UO295432*/
+
+ /* Especificidad: 011*/
+ section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5% 3%;
+    align-items: center;
+    max-width: 50%;
+ }
+
+ div{
+    grid-column: span 1;
+    background-color: #0007;
+    border:0.5em solid #000;
+    aspect-ratio: 1;
+    border-radius: 50%;
+ }
+
+ section:nth-of-type(2)>h2{
+    grid-column: span 4; 
+    text-align: center;
+ }
+
+ section:nth-of-type(2)>button:nth-of-type(1) {
+    grid-column: 2 / 3; 
+    grid-row: 3; 
+  }
+
+ section:nth-of-type(2)>button:nth-of-type(2) {
+    grid-column: 3 / 4; 
+    grid-row: 3; 
+ }
+
+ section:nth-of-type(2)>p{
+    grid-column: span 4; 
+    text-align: center;
+ }
+
+ @keyframes in {
+    from {background-color: #0007;}
+    to {background-color: #FF0000;}
+ }
+
+ section:nth-of-type(2).load div:first-of-type {
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+ }
+ section:nth-of-type(2).load div:nth-of-type(2) {
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+ }
+ section:nth-of-type(2).load div:nth-of-type(3) {
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+ }
+ section:nth-of-type(2).load div:nth-of-type(4) {
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+ }
+
+ @keyframes out {
+    from {background-color: #FF0000;}
+    to {background-color: #0007;}
+ }
+
+ section:nth-of-type(2).unload div:first-of-type,
+ section:nth-of-type(2).unload div:nth-of-type(2),
+ section:nth-of-type(2).unload div:nth-of-type(3),
+ section:nth-of-type(2).unload div:nth-of-type(4){
+    animation-name: out;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+ }
+
+
+ @media (max-width: 36rem) {
+    section:nth-of-type(2) {
+        max-width: 100%;
+    }
+}

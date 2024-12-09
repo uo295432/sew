@@ -1,4 +1,5 @@
 /* datos personales Óscar Cervero Luiña UO295432*/
+/* Especificidad: 001*/
 header {
     display: flex;
     flex-flow: row wrap;
@@ -6,14 +7,17 @@ header {
     align-items: baseline;
 }
 
+/* Especificidad: 002*/
 header>h1 {
     flex: 1;
 }
 
+/* Especificidad: 002*/
 header>nav {
     flex: 2;
 }
 
+/* Especificidad: 003*/
 header>nav>a {
     flex: 1;
     margin: 2em;
@@ -21,6 +25,7 @@ header>nav>a {
 
 @media (max-width: 36rem) {
 
+    /* Especificidad: 003*/
     header>nav>a {
         display: block;
     }

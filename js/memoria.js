@@ -59,48 +59,70 @@ class Memoria{
         this.addEventListeners();
     }
     shuffleElements(){
-        elementsBarajados=this.elements;
-        for(i=this.elements.length - 1;i>0;i--){
-            j=Math.floor(Math.random() * (i + 1));
+        let elementsBarajados = [...this.elements];
+        for(let i=this.elements.length - 1;i>0;i--){
+            let j=Math.floor(Math.random() * (i + 1));
             [elementsBarajados[i],elementsBarajados[j]]=[elementsBarajados[j],elementsBarajados[i]];
         }
-        this.elements=elementosBarajados;
+        this.elements=elementsBarajados;
     }
     unflipCards(){
         setTimeout(() =>{
-            this.firstCard.setAtribute("data-state","initial");
-            this.secondCard.setAtribute("data-state","initial");
+            this.firstCard.setAttribute("data-state","initial");
+            this.secondCard.setAttribute("data-state","initial");
             this.resetBoard();
         },2500);
     }
     resetBoard(){
-        hasFlippedCard=false;
-        lockBoard=false;
-        firstCard=null;
-        secondCard=null;
+        this.hasFlippedCard=false;
+        this.lockBoard=false;
+        this.firstCard=null;
+        this.secondCard=null;
     }
     checkForMatch(){
-        firstCard=secondCard ? this.disableCards() : this.unflipCards();
+        this.firstCard.getAttribute('data-element')===this.secondCard.getAttribute('data-element') ? this.disableCards() : this.unflipCards();
     }
     disableCards(){
-        this.firstCard.setAtribute("data-state","revealed");
-        this.secondCard.setAtribute("data-state","revealed");
+        this.firstCard.setAttribute("data-state","revealed");
+        this.secondCard.setAttribute("data-state","revealed");
         this.resetBoard();
     }
     createElements(){
-        for(i=0;i<this.elements.length;i++){
-            //quizá haya que poner data-state="" después de data element
-            var e=document.createElement("<article data-element='"+this.elements[i][element]+"' data-state='initial'>"+"<h3>Tarjeta de memoria</h3>\
-            <img src='"+this.elements[i][source]+"' alt='"+this.elements[i][element]+"' />"+"</article>");
-            document.body.main.appendChild(e);
-        }
+        const sections = document.querySelectorAll('main > section');
+        const targetSection = sections[1];
+        this.elements.forEach(item => {
+            const article = document.createElement('article');
+            article.setAttribute('data-element', item.element);
+            article.setAttribute('data-state', 'initial');
+
+            article.innerHTML = `
+                <h3>Tarjeta de memoria</h3>
+                <img src="${item.source}" alt="${item.element}" />
+            `;
+
+            targetSection.appendChild(article);
+        });
     }
     addEventListeners(){
-        for(i=0;i<this.elements.length;i++){
-            this.flipCard.bind(card, this);
-        }
+        const articles = document.querySelectorAll('article');
+        articles.forEach(card => {
+            // Usamos bind para asegurar que el contexto de `this` se mantenga en la clase Memoria
+            card.addEventListener('click', this.flipCard.bind(this, card));
+        });
     }
     flipCard(game){
-
+        if(this.lockBoard==true || game.getAttribute('data-state')=='revealed' || game==this.firstCard){
+            return;
+        }else{
+            game.setAttribute('data-state', 'flip');
+            if(this.hasFlippedCard==true){
+                this.secondCard=game;
+                this.lockBoard=true;
+                this.checkForMatch();
+            }else{
+                this.hasFlippedCard=true;
+                this.firstCard=game;
+            }
+        }
     }
 }
