@@ -71,7 +71,7 @@ class Memoria{
             this.firstCard.setAttribute("data-state","initial");
             this.secondCard.setAttribute("data-state","initial");
             this.resetBoard();
-        },2500);
+        },1000);
     }
     resetBoard(){
         this.hasFlippedCard=false;
