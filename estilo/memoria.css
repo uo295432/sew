@@ -85,7 +85,7 @@ article img {
     }
     article {
         width: 20%; /* 100% dividido entre 4 */
-        aspect-ratio: 1 / 1.75; /* Asegura que sea cuadrado */
+        aspect-ratio: 1 / 1.25; /* Asegura que sea cuadrado */
     }
     article h3 {
         font-size: 0.5em;
@@ -98,7 +98,7 @@ article img {
     }
     article {
         width: 20%;
-        aspect-ratio: 1 / 1.75;
+        aspect-ratio: 1 / 1.5;
     }
     article h3 {
         font-size: 0.8em;
