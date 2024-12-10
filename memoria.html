@@ -48,10 +48,18 @@
          <button onclick="mostrarMensaje()">Ayuda</button>
          <script>
             function mostrarMensaje() {
-               const mensaje = `Haga click en una tarjeta y luego haga click en otra para ver si las tarjetas coinciden.
-No se podrá clickar en otra tarjeta hasta que el juego compruebe si las dos tarjetas que hay boca arriba son iguales.
-Si no lo fuesen, tardará un poco en darles la vuelta para que pueda volver a clickar en otra tarjeta.`;
-                alert(mensaje);
+               const sections = document.querySelectorAll('main > section');
+               const targetSection = sections[1];
+               let ayuda = targetSection.querySelector("p");
+
+               if (!ayuda) {
+                  ayuda = document.createElement("p");
+                  ayuda.textContent = "Pulse en una tarjeta y luego pulse en otra para formar parejas. Si falla tendrá un tiempo para memorizar.";
+                  const h3 = targetSection.querySelector("h3"); 
+                  targetSection.insertBefore(ayuda, h3); 
+               } else {
+                  ayuda.remove();
+               }
             }
         </script>
          <h3> Juego de memoria</h3>
