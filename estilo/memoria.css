@@ -37,6 +37,8 @@ button{
     max-width: 7rem; /* Limita el tamaño visible del botón */
     margin: 0 auto; /* Centra el botón horizontalmente si es más pequeño que la línea */
     text-align: center;
+    appearance: none; /* Elimina estilos predeterminados de iOS */
+    -webkit-appearance: none; /* Elimina estilos específicos de Safari */
 }
 
 /* Especificidad: 011*/
@@ -83,11 +85,10 @@ article img {
     }
     article {
         width: 20%; /* 100% dividido entre 4 */
-        aspect-ratio: 1 / 1; /* Asegura que sea cuadrado */
-        height: auto; /* Opcional con aspect-ratio */
+        aspect-ratio: 1 / 1.75; /* Asegura que sea cuadrado */
     }
     article h3 {
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
 }
 
@@ -97,7 +98,7 @@ article img {
     }
     article {
         width: 20%;
-        aspect-ratio: 1 / 1.5;
+        aspect-ratio: 1 / 1.75;
     }
     article h3 {
         font-size: 0.8em;
