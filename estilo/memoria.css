@@ -99,9 +99,9 @@ article img {
     }
     article {
         width: 20%;
-        aspect-ratio: 1 / 1.5;
+        aspect-ratio: 1 / 1.75;
     }
     article h3 {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
 }
