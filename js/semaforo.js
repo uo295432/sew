@@ -5,6 +5,7 @@ class Semáforo{
     clic_moment=null;
     botonArranque = null; 
     botonReaccion = null; 
+    mensajeTiempo = null;
 
     constructor(){
         this.difficulty=Math.floor(Math.random() * 3);
@@ -37,6 +38,9 @@ class Semáforo{
             this.stopReaction();
         });
         mainElement.appendChild(this.botonReaccion);
+        
+        this.mensajeTiempo = document.createElement('p');
+        mainElement.appendChild(this.mensajeTiempo);
     }
 
     initSequence(){
@@ -52,19 +56,16 @@ class Semáforo{
 
     endSequence(){
         const mainElement = document.querySelector('main > section:nth-of-type(2)');
+        mainElement.classList.remove('load');
         mainElement.classList.add('unload');
         this.botonReaccion.disabled = false;
     }
 
     stopReaction(){
         this.clic_moment=new Date();
-        const tiempoReaccion=this.clic_moment-this.unload_moment;
-        const tiempoReaccionSegundos=(tiempoReaccion / 1000).toFixed(3);
+        const tiempoReaccion = (this.clic_moment - this.unload_moment).toFixed(3);
+        this.mensajeTiempo.textContent = `Tiempo de reacción: ${tiempoReaccion} milisegundos`;
         const mainElement = document.querySelector('main > section:nth-of-type(2)');
-        const mensajeTiempo = document.createElement('p');
-        mensajeTiempo.textContent = `Tiempo de reacción: ${tiempoReaccionSegundos} segundos`;
-        mainElement.appendChild(mensajeTiempo);
-        mainElement.classList.remove('load');
         mainElement.classList.remove('unload');
         this.botonArranque.disabled = false;
         this.botonReaccion.disabled = true;
