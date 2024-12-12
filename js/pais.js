@@ -7,7 +7,7 @@ class País{
         this.tipo = "&mode=xml";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.url = "http://api.openweathermap.org/data/2.5/forecast?lat=40.3725&lon=49.8533"+ this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/forecast?lat=40.3725&lon=49.8533"+ this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
     }
     rellenar(){
         this.circuito="Baku City";
