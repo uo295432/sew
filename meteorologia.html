@@ -6,12 +6,17 @@
    <meta charset="UTF-8" />
    <title> Meteorologia</title>
    <script src="js/pais.js"></script>
+   <script
+			  src="https://code.jquery.com/jquery-3.7.1.js"
+			  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			  crossorigin="anonymous"></script>
    <meta name="author" content="Óscar Cervero Luiña" />
    <meta name="description" content="Meteorología de las próximas carreras" />
    <meta name="keywords" content="meteorología,tiempo" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+   <link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
    <link rel="icon" href="multimedia/imagenes/favicon.ico" />
 </head>
 
@@ -43,7 +48,11 @@
       document.write(Pais.informacionSecundaria());
       Pais.escribeCoordenadas();
       document.write("</section>");
+      Pais.cargarDatos();
       </script>
+      <section>
+         
+      </section>
    </main>
 </body>
 
