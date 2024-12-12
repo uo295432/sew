@@ -6,12 +6,14 @@
    <meta charset="UTF-8" />
    <title> Noticias</title>
    <meta name="author" content="Óscar Cervero Luiña" />
-   <meta name="description" content="Noticias sobre Guanyu Zhou" />
+   <meta name="description" content="Noticias sobre Guanyu Zhou y F1" />
    <meta name="keywords" content="noticias" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+   <link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
    <link rel="icon" href="multimedia/imagenes/favicon.ico" />
+   <script src="js/noticias.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,24 @@
    <p>Estás en:<a href="index.html">Inicio</a>/ Noticias</p>
    <main>
       <h2> Noticias</h2>
-      <p> En desarrollo</p>
+      <section>
+         <p>Seleccione un archivo de texto: </p>
+         <p><input type="file" onchange="noticias.readInputFile(this.files);"></p>
+         <p><strong>Título:</strong> <input type="text"></p>
+         <p><strong>Texto:</strong> <input type="text"></p>
+         <p><strong>Autor:</strong> <input type="text"></p>
+         <p>
+            <button onclick="(function() { 
+               const inputs = document.querySelectorAll('section input[type=text]'); 
+               noticias.agregarNoticia(inputs[0].value, inputs[1].value, inputs[2].value); 
+            })()">Crear Noticia</button>
+         </p>
+      </section>
+      <section>
+         <script>
+            var noticias = new Noticias();
+         </script>
+      </section>
    </main>
 </body>
 

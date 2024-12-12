@@ -10,7 +10,7 @@
     max-width: 50%;
  }
 
- div{
+ section>div{
     grid-column: span 1;
     background-color: #0007;
     border:0.5em solid #000;

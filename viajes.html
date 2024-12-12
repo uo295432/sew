@@ -12,6 +12,8 @@
    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
    <link rel="icon" href="multimedia/imagenes/favicon.ico" />
+   <script src="js/viajes.js"></script>
+   <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-4JVZ3jGnpI8kJ5tBwMgNNV-tZKtt394" ></script>
 </head>
 
 <body>
@@ -32,8 +34,18 @@
    <p>Estás en:<a href="index.html">Inicio</a>/ Viajes</p>
    <main>
       <h2> Viajes</h2>
-      <p> En desarrollo</p>
+      <h3>Mapa estático</h3>
+      <section>
+         <button onclick="viajes.getMapaEstaticoGoogle()">Mostrar Mapa Estático</button>
+      </section>
+      <h3>Mapa dinámico</h3>
+      <button onclick="viajes.getMapaDinámicoGoogle()">Mostrar Mapa Dinámico</button>
+      <div>
+      </div>
    </main>
+   <script>
+      var viajes = new Viajes();
+   </script>
 </body>
 
 </html>

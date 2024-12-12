@@ -1,9 +1,9 @@
 /* datos personales Óscar Cervero Luiña UO295432*/
-section:nth-of-type(2){
+section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1% 3%;
+    gap: 1% 1%;
     align-items: center;
     max-width: 50%;
 }
@@ -26,18 +26,8 @@ article{
     text-align: center;
 }
 
-article img{
-    background-color: #333652;
-}
-
-input[type="text"] {
-    display: block; 
-    width: 100%;    
-    box-sizing: border-box; 
-}
-
 @media (max-width: 36rem) {
-    section:nth-of-type(2) {
+    section {
         max-width: 100%;
     }
 }

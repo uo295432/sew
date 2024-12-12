@@ -50,9 +50,22 @@
   max-width: 50vw;
  }
 
- /* Especificidad: 001*/
- image{
-  width: 100%;
+ /* Especificidad: 002*/
+ section > img {
+  width: 100%;          
+  height: auto;          
+  max-width: 80%;      
+  display: block;        
+  margin: 0 auto;       
+ }
+ 
+ /* Especificidad: 002*/
+ main>div{
+  width: 100%;          
+  height: auto;          
+  max-width: 80%;      
+  display: block;        
+  margin: 0 auto; 
  }
 
  /* Especificidad: 002*/
