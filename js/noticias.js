@@ -26,7 +26,7 @@ class Noticias{
 
                 const noticiaHTML = `
                     <article>
-                        <h3>${titulo}</h3>
+                        <h3>Título: ${titulo}</h3>
                         <p>Texto: ${texto}</p>
                         <p>Autor: ${autor}</p>
                     </article>
@@ -46,7 +46,7 @@ class Noticias{
         const seccion = secciones[secciones.length - 1];
         const noticiaHTML = `
             <article>
-                <h3>${tituloAMano}</h3>
+                <h3>Título:${tituloAMano}</h3>
                 <p>Texto: ${textoAMano}</p>
                 <p>Autor: ${autorAMano}</p>
             </article>

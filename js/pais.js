@@ -61,7 +61,7 @@ class País{
     
                     let articleHtml = `
                         <article>
-                            <p>Pronóstico para el día: ${fecha} de 3 a 6 de la tarde</p>
+                            <h3>${fecha} de 3 a 6 de la tarde</h3>
                             <p>Temperatura máxima: ${tempMax} °C</p>
                             <p>Temperatura mínima: ${tempMin} °C</p>
                             <p>Humedad:</strong> ${humedad}%</p>

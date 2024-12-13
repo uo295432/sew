@@ -33,8 +33,8 @@
    </header>
    <p>Estás en:<a href="index.html">Inicio</a>/ Noticias</p>
    <main>
-      <h2> Noticias</h2>
       <section>
+         <h2> Noticias</h2>
          <p>Seleccione un archivo de texto: </p>
          <p><input type="file" onchange="noticias.readInputFile(this.files);"></p>
          <p>Título: <input type="text"></p>
@@ -48,6 +48,7 @@
          </p>
       </section>
       <section>
+         <h3>Noticias mostradas</h3>
          <script>
             var noticias = new Noticias();
          </script>

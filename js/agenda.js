@@ -10,6 +10,9 @@ class Agenda{
             success: function(datos) {
                 const carreras = datos.MRData.RaceTable.Races;
 
+                const encabezado = `<h3>Carreras de esta temporada</h3>`;
+                $("section").append(encabezado);
+
                 carreras.forEach((carrera) => {
                     const nombreCarrera = carrera.raceName;
                     const nombreCircuito = carrera.Circuit.circuitName;
@@ -20,7 +23,7 @@ class Agenda{
 
                     const contenidoArticle = `
                         <article>
-                            <p>Carrera: ${nombreCarrera}</p>
+                            <h3>${nombreCarrera}</h3>
                             <p>Circuito: ${nombreCircuito}</p>
                             <p>Coordenadas: ${latitud}°N, ${longitud}°E</p>
                             <p>Hora de la carrera: ${fechaCarrera} ${horaCarrera}</p>
