@@ -10,6 +10,7 @@
     max-width: 50%;
  }
 
+ /* Especificidad: 002*/
  section>div{
     grid-column: span 1;
     background-color: #0007;
@@ -18,21 +19,25 @@
     border-radius: 50%;
  }
 
+ /* Especificidad: 012*/
  section:nth-of-type(2)>h2{
     grid-column: span 4; 
     text-align: center;
  }
 
+ /* Especificidad: 022*/
  section:nth-of-type(2)>button:nth-of-type(1) {
     grid-column: 2 / 3; 
     grid-row: 3; 
   }
 
+  /* Especificidad: 022*/
  section:nth-of-type(2)>button:nth-of-type(2) {
     grid-column: 3 / 4; 
     grid-row: 3; 
  }
 
+ /* Especificidad: 012*/
  section:nth-of-type(2)>p{
     grid-column: span 4; 
     text-align: center;
@@ -43,23 +48,27 @@
     to {background-color: #FF0000;}
  }
 
+ /* Especificidad: 032*/
  section:nth-of-type(2).load div:first-of-type {
     animation-name: in;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
  }
+ /* Especificidad: 032*/
  section:nth-of-type(2).load div:nth-of-type(2) {
     animation-name: in;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
  }
+ /* Especificidad: 032*/
  section:nth-of-type(2).load div:nth-of-type(3) {
     animation-name: in;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
  }
+ /* Especificidad: 032*/
  section:nth-of-type(2).load div:nth-of-type(4) {
     animation-name: in;
     animation-duration: 0.5s;
@@ -72,6 +81,7 @@
     to {background-color: #0007;}
  }
 
+ /* Especificidad: 032*/
  section:nth-of-type(2).unload div:first-of-type,
  section:nth-of-type(2).unload div:nth-of-type(2),
  section:nth-of-type(2).unload div:nth-of-type(3),
@@ -83,6 +93,7 @@
 
 
  @media (max-width: 36rem) {
+   /* Especificidad: 011*/
     section:nth-of-type(2) {
         max-width: 100%;
     }

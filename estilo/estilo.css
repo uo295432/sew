@@ -62,7 +62,7 @@
  /* Especificidad: 002*/
  main>div{
   width: 100%;          
-  height: auto;          
+  height: 30vh;          
   max-width: 80%;      
   display: block;        
   margin: 0 auto; 
