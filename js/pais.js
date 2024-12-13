@@ -61,11 +61,11 @@ class País{
     
                     let articleHtml = `
                         <article>
-                            <p><strong>Pronóstico para el día: ${fecha} de 3 a 6 de la tarde</strong></p>
-                            <p><strong>Temperatura máxima:</strong> ${tempMax} °C</p>
-                            <p><strong>Temperatura mínima:</strong> ${tempMin} °C</p>
-                            <p><strong>Humedad:</strong> ${humedad}%</p>
-                            <p><strong>Cantidad de lluvia(mm):</strong> ${precip }</p>
+                            <p>Pronóstico para el día: ${fecha} de 3 a 6 de la tarde</p>
+                            <p>Temperatura máxima: ${tempMax} °C</p>
+                            <p>Temperatura mínima: ${tempMin} °C</p>
+                            <p>Humedad:</strong> ${humedad}%</p>
+                            <p>Cantidad de lluvia(mm): ${precip }</p>
                             <img src="${iconUrl}" alt="Icono del clima" />
                         </article>
                     `;

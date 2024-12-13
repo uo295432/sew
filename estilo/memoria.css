@@ -40,7 +40,6 @@ button{
     margin: 0 auto; /* Centra el botón horizontalmente si es más pequeño que la línea */
     text-align: center;
     appearance: none; /* Elimina estilos predeterminados de iOS */
-    -webkit-appearance: none; /* Elimina estilos específicos de Safari */
 }
 
 /* Especificidad: 011*/

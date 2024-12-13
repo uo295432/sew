@@ -20,10 +20,10 @@ class Agenda{
 
                     const contenidoArticle = `
                         <article>
-                            <p><strong>Carrera: </strong>${nombreCarrera}</p>
-                            <p><strong>Circuito:</strong> ${nombreCircuito}</p>
-                            <p><strong>Coordenadas:</strong> ${latitud}°N, ${longitud}°E</p>
-                            <p><strong>Hora de la carrera:</strong> ${fechaCarrera} ${horaCarrera}</p>
+                            <p>Carrera: ${nombreCarrera}</p>
+                            <p>Circuito: ${nombreCircuito}</p>
+                            <p>Coordenadas: ${latitud}°N, ${longitud}°E</p>
+                            <p>Hora de la carrera: ${fechaCarrera} ${horaCarrera}</p>
                         </article>
                     `;
 

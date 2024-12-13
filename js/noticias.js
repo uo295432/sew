@@ -27,8 +27,8 @@ class Noticias{
                 const noticiaHTML = `
                     <article>
                         <h3>${titulo}</h3>
-                        <p><strong>Texto:</strong> ${texto}</p>
-                        <p><strong>Autor:</strong> ${autor}</p>
+                        <p>Texto: ${texto}</p>
+                        <p>Autor: ${autor}</p>
                     </article>
                 `;
 
@@ -47,8 +47,8 @@ class Noticias{
         const noticiaHTML = `
             <article>
                 <h3>${tituloAMano}</h3>
-                <p><strong>Texto:</strong> ${textoAMano}</p>
-                <p><strong>Autor:</strong> ${autorAMano}</p>
+                <p>Texto: ${textoAMano}</p>
+                <p>Autor: ${autorAMano}</p>
             </article>
         `;
         seccion.innerHTML += noticiaHTML;
