@@ -18,7 +18,6 @@ button{
     font-size: 1.5em;
     max-width: 20rem;
     appearance: none; /* Elimina estilos predeterminados de iOS */
-    -webkit-appearance: none; /* Elimina estilos específicos de Safari */
 }
 
 /* Especificidad: 002*/

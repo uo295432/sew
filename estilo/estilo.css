@@ -22,6 +22,17 @@
    max-width: 50vw;
  }
 
+ /* Especificidad: 001*/
+ button{
+  background: #333652;
+  color:#FFFF00;
+  border: 0.1em solid #000;
+  font-size: 1.5em;
+  max-width: 20rem;
+  margin-bottom: 0.5em;
+  appearance: none; /* Elimina estilos predeterminados de iOS */
+}
+
  /* Especificidad: 002*/
  h1 a{
    text-decoration: none;
@@ -58,14 +69,29 @@
   display: block;        
   margin: 0 auto;       
  }
+
+ /* Especificidad: 002*/
+ figure>img{
+  width: 100%;          
+  height: auto;          
+  max-width: 80%;      
+  display: block;        
+  margin: 0 auto;     
+ }
  
  /* Especificidad: 002*/
  main>div{
   width: 100%;          
-  height: 70vh;          
+  height: 40vh;          
   max-width: 80%;      
   display: block;        
   margin: 0 auto; 
+ }
+
+ /* Especificidad: 001*/
+ svg{
+  width: 100%; 
+  height: 90vh; 
  }
 
  /* Especificidad: 002*/
@@ -158,6 +184,63 @@
  a:visited.active{
   color:#FFFF00;
  }
+
+ div+article {
+  width: 100%;
+  max-width: 100vh;
+  height: 70vh;
+  position: relative;
+  overflow: hidden; /* <===  */
+  border-radius: 1em;
+  }
+
+  div+article>h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+  }
+
+  div+article>img {
+  width: 100%;
+  max-width: 100vh;
+  height: 60vh;
+  position: absolute;
+  transition: all 0.5s;
+  object-fit: cover;
+  border-radius: 0.5em;
+  }
+
+  div+article>button {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background-color: #fff;
+  color:#000;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  }
+  div+article>button:active {
+  transform: scale(1.1);
+  }
+
+  div+article>button:nth-of-type(2) {
+  top: 50%;
+  left: 2%;
+  }
+
+  div+article>button:nth-of-type(1) {
+  top: 50%;
+  right: 2%;
+  }
 
  @media (max-width: 36rem) { 
    /* Especificidad: 001*/

@@ -1,89 +1,179 @@
 class Circuito {
     constructor() {
-        this.init();
+        this.file = null;
+        this.archivoKML=null;
     }
 
-    init() {
-        $(document).ready(() => {
-            $("#fileInput").on("change", (event) => {
-                const file = event.target.files[0];
+    ficheroXML() {
+        if (this.file) {
+            const reader = new FileReader();
 
-                if (file) {
-                    const reader = new FileReader();
+            reader.onload = (e) => {
+                const xmlContent = e.target.result;
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlContent, "application/xml");
 
-                    reader.onload = (e) => {
-                        const xmlContent = e.target.result;
-                        const parser = new DOMParser();
-                        const xmlDoc = parser.parseFromString(xmlContent, "application/xml");
-
-                        if (xmlDoc.documentElement.nodeName === "parsererror") {
-                            $("#output").html("<p>Error al analizar el archivo XML.</p>");
-                            return;
-                        }
-
-                        this.renderXML(xmlDoc);
-                    };
-
-                    reader.readAsText(file);
+                if (xmlDoc.documentElement.nodeName === "parsererror") {
+                    document.querySelector("section").innerHTML = "<p>Error al analizar el archivo XML.</p>";
+                    return;
                 }
-            });
-        });
+
+                this.renderXML(xmlDoc);
+            };
+
+            reader.readAsText(this.file);
+        }
     }
 
     renderXML(xmlDoc) {
-        const circuito = $(xmlDoc).find("circuito");
-        let html = "<h2>Información del Circuito</h2>";
+        const output = document.querySelectorAll('main > section')[0];
+        let html = "<h3>Información del Circuito</h3>";
 
-        html += `<p><strong>Nombre:</strong> ${circuito.find("nombre").text()}</p>`;
-        html += `<p><strong>Longitud Total:</strong> ${circuito.find("longitudTotal").text()} ${circuito.find("longitudTotal").attr("unidad")}</p>`;
-        html += `<p><strong>Anchura Media:</strong> ${circuito.find("anchuraMedia").text()} ${circuito.find("anchuraMedia").attr("unidad")}</p>`;
-        html += `<p><strong>Fecha:</strong> ${circuito.find("fecha").text()}</p>`;
-        html += `<p><strong>Hora:</strong> ${circuito.find("hora").text()}</p>`;
-        html += `<p><strong>Vueltas:</strong> ${circuito.find("vueltas").text()}</p>`;
-        html += `<p><strong>Localidad:</strong> ${circuito.find("localidad").text()}</p>`;
-        html += `<p><strong>País:</strong> ${circuito.find("país").text()}</p>`;
+        const circuito = xmlDoc.querySelector("circuito");
+        html += `<p>Nombre: ${circuito.querySelector("nombre").textContent}</p>`;
+        html += `<p>Longitud Total: ${circuito.querySelector("longitudTotal").textContent} ${circuito.querySelector("longitudTotal").getAttribute("unidad")}</p>`;
+        html += `<p>Anchura Media: ${circuito.querySelector("anchuraMedia").textContent} ${circuito.querySelector("anchuraMedia").getAttribute("unidad")}</p>`;
+        html += `<p>Fecha: ${circuito.querySelector("fecha").textContent}</p>`;
+        html += `<p>Hora: ${circuito.querySelector("hora").textContent}</p>`;
+        html += `<p>Vueltas: ${circuito.querySelector("vueltas").textContent}</p>`;
+        html += `<p>Localidad: ${circuito.querySelector("localidad").textContent}</p>`;
+        html += `<p>País: ${circuito.querySelector("país").textContent}</p>`;
 
-        const referencias = circuito.find("referencias referencia");
-        if (referencias.length > 0) {
-            html += "<h3>Referencias</h3><ul>";
-            referencias.each(function() {
-                html += `<li><a href="${$(this).text()}" target="_blank">${$(this).text()}</a></li>`;
-            });
-            html += "</ul>";
-        }
+        const referencias = circuito.querySelectorAll("referencias referencia");
+        html += "<h4>Referencias</h4><ul>";
+        referencias.forEach((ref) => {
+            html += `<li><a href="${ref.textContent}" target="_blank">${ref.textContent}</a></li>`;
+        });
+        html += "</ul>";
 
-        const fotografias = circuito.find("fotografías fotografía");
-        if (fotografias.length > 0) {
-            html += "<h3>Fotografías</h3>";
-            fotografias.each(function() {
-                html += `<figure><img src="${$(this).text()}" alt="${$(this).attr("descripción")}" style="max-width: 100%; height: auto;">
-                          <figcaption>${$(this).attr("descripción")}</figcaption></figure>`;
-            });
-        }
+        const fotografias = circuito.querySelectorAll("fotografías fotografía");
+        html += "<h4>Fotografías</h4>";
+        fotografias.forEach((foto) => {
+            const imagePath = `xml/${foto.textContent}`; 
+            html += `<figure>
+                <img src="${imagePath}" alt="${foto.getAttribute("descripción")}">
+                <figcaption>${foto.getAttribute("descripción")}</figcaption>
+             </figure>`;
+        });
 
-        const videos = circuito.find("vídeos vídeo");
+        const videos = circuito.querySelectorAll("vídeos vídeo");
         if (videos.length > 0) {
-            html += "<h3>Vídeos</h3>";
-            videos.each(function() {
-                html += `<video controls style="max-width: 100%;">
-                            <source src="${$(this).text()}" type="video/mp4">
+            html += "<h4>Vídeos</h4>";
+            videos.forEach((video) => {
+                const videoPath = `xml/${video.textContent}`; 
+                html += `<video controls>
+                            <source src="${videoPath}" type="video/mp4">
                             Tu navegador no soporta la reproducción de este video.
                         </video>`;
             });
         }
 
-        const tramos = circuito.find("tramos tramo");
+        const tramos = circuito.querySelectorAll("tramos tramo");
         if (tramos.length > 0) {
-            html += "<h3>Tramos</h3><ul>";
-            tramos.each(function() {
-                const distancia = $(this).find("distancia").text();
-                const unidad = $(this).find("distancia").attr("unidad");
-                const sector = $(this).find("sector").text();
-                html += `<li>Tramo del sector ${sector}: ${distancia} ${unidad}</li>`;
+            html += "<h4>Tramos</h4><ul>";
+            let cont=1;
+            tramos.forEach((tramo) => {
+                const distancia = tramo.querySelector("distancia").textContent;
+                const unidad = tramo.querySelector("distancia").getAttribute("unidad");
+                const sector = tramo.querySelector("sector").textContent;
+                const latitud = tramo.querySelector("latitud").textContent;
+                const longitud = tramo.querySelector("longitud").textContent;
+                const altitud = tramo.querySelector("altitud").textContent;
+                html += `<li>Tramo ${cont}: Sector ${sector}: ${distancia} ${unidad}; Latitud:${latitud} Longitud:${longitud} Altitud:${altitud}</li>`;
+                cont++;
             });
             html += "</ul>";
         }
 
-        $("#output").html(html);
+        output.innerHTML = html;
+    }
+
+
+    ficheroKML() {
+        if (this.file) {
+            const fileName = this.file.name;
+            const fileExtension = fileName.split('.').pop().toLowerCase(); 
+            if (fileExtension === 'kml') {
+                this.archivoKML = this.file;  
+                this.getMapaDinámicoGoogle();  
+            } else {
+                document.write("<p>No es un archivo KML </p>");
+                this.archivoKML = null; 
+            }
+        }
+    }
+
+    getMapaDinámicoGoogle() {
+        var map;
+        const reader = new FileReader();
+        const mapContainer = document.createElement("div");
+        const mainElement = document.querySelector("main");
+        const p = mainElement.querySelectorAll("p");
+        const secondP = p[0];
+        secondP.insertAdjacentElement("afterend", mapContainer);
+        reader.onload = (e) => {
+            const kmlText = e.target.result;
+    
+            const parser = new DOMParser();
+            const kmlDoc = parser.parseFromString(kmlText, "application/xml");
+    
+            map = new google.maps.Map(document.querySelector("main > div"), {
+                center: new google.maps.LatLng(40.3734205, 49.8552053),
+                zoom: 12,
+                mapTypeId: 'terrain'
+            });
+
+            const placemarks = kmlDoc.getElementsByTagName("Placemark");
+            for (let i = 0; i < placemarks.length; i++) {
+                const coordinates = placemarks[i].getElementsByTagName("coordinates")[0]?.textContent.trim();
+                if (coordinates) {
+                    const coordsArray = coordinates.split(/\s+/);
+    
+                    coordsArray.forEach(coord => {
+                        const [lng, lat] = coord.split(",").map(Number);
+                        new google.maps.Marker({
+                            position: { lat, lng },
+                            map: map,
+                            title: placemarks[i].getElementsByTagName("name")[0]?.textContent || "Sin título",
+                            icon: "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png" 
+                        });
+                    });
+                }
+            }
+        };
+        reader.readAsText(this.archivoKML);
+    }
+
+    ficheroSVG() {
+        if (this.file) {
+            const fileName = this.file.name;
+            const fileExtension = fileName.split('.').pop().toLowerCase(); 
+            if (fileExtension === 'svg') {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    let svgContent = e.target.result;
+
+                    svgContent = svgContent.replace(/<svg[^>]*version="2\.0"[^>]*>/, '<svg xmlns="http://www.w3.org/2000/svg">');
+
+                    if (!/<svg[^>]*xmlns="http:\/\/www.w3.org\/2000\/svg"/.test(svgContent)) {
+                       svgContent = svgContent.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+                    }
+
+    
+                    const container = document.querySelectorAll('main > section')[1];
+                    let html = "<h3>Archivo de altimetría:</h3>";
+                    container.innerHTML=html;
+                    container.innerHTML += svgContent; 
+                };
+    
+                reader.readAsText(this.file); 
+            } else {
+                document.write("<p>No es un archivo SVG</p>");
+            }
+        }
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const circuito = new Circuito();
+});

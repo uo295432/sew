@@ -13,6 +13,11 @@
    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
    <link rel="icon" href="multimedia/imagenes/favicon.ico" />
    <script src="js/circuito.js"></script>
+   <script
+			  src="https://code.jquery.com/jquery-3.7.1.js"
+			  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			  crossorigin="anonymous"></script>
+   <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-4JVZ3jGnpI8kJ5tBwMgNNV-tZKtt394" ></script>
 </head>
 
 <body>
@@ -26,16 +31,26 @@
          <a href="calendario.html">Calendario</a>
          <a href="meteorologia.html">Meteorologia</a>
          <a href="circuito.html" class="active">Circuito</a>
-         <a href="viajes.html">Viajes</a>
+         <a href="viajes.php">Viajes</a>
          <a href="juegos.html">Juegos</a>
       </nav>
    </header>
    <p>Estás en:<a href="index.html">Inicio</a>/ Circuito</p>
    <main>
       <h2> Circuito</h2>
+      <label for="archivoKML">Seleccione un archivo KML: </label>
+      <input type="file" id="archivoKML" onchange="circuito.file = this.files[0]; circuito.ficheroKML();">
+      <p>  </p>
       <section>
-         <p>Seleccione un archivo XML: </p>
-         <p><input type="file" onchange="noticias.readInputFile(this.files);"></p>
+         <h3>Datos del archivo XML:</h3>
+         <label for="archivoXML">Seleccione un archivo XML: </label>
+         <input type="file" id="archivoXML" onchange="circuito.file = this.files[0]; circuito.ficheroXML();">
+      </section>
+      <p>  </p>
+      <label for="archivoSVG">Seleccione un archivo SVG: </label>
+      <input type="file" id="archivoSVG" onchange="circuito.file = this.files[0]; circuito.ficheroSVG();">
+      <section>
+         <h3>Altimetría:</h3>
       </section>
    </main>
    <script>

@@ -27,12 +27,16 @@
 
  /* Especificidad: 022*/
  section:nth-of-type(2)>button:nth-of-type(1) {
+    color: initial;
+    background-color: initial;
     grid-column: 2 / 3; 
     grid-row: 3; 
   }
 
   /* Especificidad: 022*/
  section:nth-of-type(2)>button:nth-of-type(2) {
+    color: initial;
+    background-color: initial;
     grid-column: 3 / 4; 
     grid-row: 3; 
  }

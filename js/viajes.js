@@ -55,7 +55,7 @@ class Viajes{
         var infoWindow = new google.maps.InfoWindow;
         var centro = {lat: this.getLatitud(), lng: this.getLongitud()};
         var mapaGeoposicionado = new google.maps.Map(document.querySelector("main > div"),{
-            zoom: 8,
+            zoom: 13,
             center:centro,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         });
@@ -65,3 +65,44 @@ class Viajes{
         mapaGeoposicionado.setCenter(centro);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll("article > img");
+
+    const nextSlide = document.querySelector("article >button:nth-of-type(1)");
+    const prevSlide = document.querySelector("article >button:nth-of-type(2)");
+    let curSlide = 0;
+    const maxSlide = slides.length - 1;
+
+    if (nextSlide) {
+        nextSlide.addEventListener("click", function () {
+
+            if (curSlide === maxSlide) {
+                curSlide = 0;
+            } else {
+                curSlide++;
+            }
+
+            slides.forEach((slide, indx) => {
+                var trans = 100 * (indx - curSlide);
+                $(slide).css("transform", "translateX(" + trans + "%)");
+            });
+        });
+    }
+
+    if (prevSlide) {
+        prevSlide.addEventListener("click", function () {
+
+            if (curSlide === 0) {
+                curSlide = maxSlide;
+            } else {
+                curSlide--;
+            }
+
+            slides.forEach((slide, indx) => {
+                var trans = 100 * (indx - curSlide);
+                $(slide).css("transform", "translateX(" + trans + "%)");
+            });
+        });
+    }
+});

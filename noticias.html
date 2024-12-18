@@ -27,7 +27,7 @@
          <a href="calendario.html">Calendario</a>
          <a href="meteorologia.html">Meteorologia</a>
          <a href="circuito.html">Circuito</a>
-         <a href="viajes.html">Viajes</a>
+         <a href="viajes.php">Viajes</a>
          <a href="juegos.html">Juegos</a>
       </nav>
    </header>
@@ -35,11 +35,11 @@
    <main>
       <section>
          <h2> Noticias</h2>
-         <p>Seleccione un archivo de texto: </p>
-         <p><input type="file" onchange="noticias.readInputFile(this.files);"></p>
-         <p>Título: <input type="text"></p>
-         <p>Texto: <input type="text"></p>
-         <p>Autor: <input type="text"></p>
+         <p><label for="archivo">Seleccione un archivo de texto: </label></p>
+         <p><input type="file" id="archivo" onchange="noticias.readInputFile(this.files);"></p>
+         <p><label for="titulo">Título:</label><input type="text" id="titulo"></p>
+         <p><label for="texto">Texto:</label><input type="text" id="texto"></p>
+         <p><label for="autor">Autor:</label><input type="text" id="autor"></p>
          <p>
             <button onclick="(function() { 
                const inputs = document.querySelectorAll('section input[type=text]'); 

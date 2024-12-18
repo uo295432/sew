@@ -69,5 +69,66 @@ class Semáforo{
         mainElement.classList.remove('unload');
         this.botonArranque.disabled = false;
         this.botonReaccion.disabled = true;
+
+        this.createRecordForm(tiempoReaccion);
+    }
+
+    createRecordForm(tiempo) {
+        const mainElement = document.querySelector('main > section:nth-of-type(2)');
+        
+        const form = document.createElement('form');
+        form.action = "semaforo.php";  
+        form.method = "POST";
+    
+        const nombreLabel = document.createElement('label');
+        nombreLabel.setAttribute('for', 'nombre');  
+        nombreLabel.textContent = "Nombre:";
+        const nombreInput = document.createElement('input');
+        nombreInput.type = "text";
+        nombreInput.id = "nombre";  
+        nombreInput.name = "nombre";
+        form.appendChild(nombreLabel);
+        form.appendChild(nombreInput);
+    
+        const apellidosLabel = document.createElement('label');
+        apellidosLabel.setAttribute('for', 'apellidos');  
+        apellidosLabel.textContent = "Apellidos:";
+        const apellidosInput = document.createElement('input');
+        apellidosInput.type = "text";
+        apellidosInput.id = "apellidos";  
+        apellidosInput.name = "apellidos";
+        form.appendChild(apellidosLabel);
+        form.appendChild(apellidosInput);
+    
+        const nivelLabel = document.createElement('label');
+        nivelLabel.setAttribute('for', 'nivel');  
+        nivelLabel.textContent = "Nivel:";
+        const nivelInput = document.createElement('input');
+        nivelInput.type = "text";
+        nivelInput.id = "nivel";  
+        nivelInput.name = "nivel";
+        nivelInput.value = this.levels[this.difficulty];  
+        nivelInput.readOnly = true;  
+        form.appendChild(nivelLabel);
+        form.appendChild(nivelInput);
+    
+        const tiempoLabel = document.createElement('label');
+        tiempoLabel.setAttribute('for', 'tiempo');  
+        tiempoLabel.textContent = "Tiempo de reacción:";
+        const tiempoInput = document.createElement('input');
+        tiempoInput.type = "text";
+        tiempoInput.id = "tiempo";  
+        tiempoInput.name = "tiempo";
+        tiempoInput.value = tiempo / 1000;  // Tiempo calculado en segundos
+        tiempoInput.readOnly = true;
+        form.appendChild(tiempoLabel);
+        form.appendChild(tiempoInput);
+    
+        const submitInput = document.createElement('input');
+        submitInput.type = "submit";
+        submitInput.value = "Registrar";  
+        form.appendChild(submitInput);
+    
+        mainElement.appendChild(form);
     }
 }

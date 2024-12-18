@@ -4,16 +4,15 @@
 <head>
    <!-- Datos que describen el documento -->
    <meta charset="UTF-8" />
-   <title> Memoria</title>
-   <script src="js/memoria.js"></script>
+   <title> ApiJs</title>
    <meta name="author" content="Óscar Cervero Luiña" />
-   <meta name="description" content="Juego de memoria" />
-   <meta name="keywords" content="juego,memoria" />
+   <meta name="description" content="Ejercicio libre js" />
+   <meta name="keywords" content="juego,geolocalización,cookies,pantalla" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-   <link rel="stylesheet" type="text/css" href="estilo/memoria.css" />
    <link rel="icon" href="multimedia/imagenes/favicon.ico" />
+   <script src="js/api.js"></script>
 </head>
 
 <body>
@@ -31,7 +30,7 @@
          <a href="juegos.html">Juegos</a>
       </nav>
    </header>
-   <p>Estás en:<a href="index.html">Inicio</a>/<a href="juegos.html">Juegos</a>/Memoria</p>
+   <p>Estás en:<a href="index.html">Inicio</a>/ <a href="juegos.html">Juegos</a>/ ApiJs</p>
    <main>
       <h2> Juegos</h2>
       <section>
@@ -53,29 +52,17 @@
          <p>Juego donde podrás crear tu propio piloto</p>
       </section>
       <section>
-         <button onclick="mostrarMensaje()">Ayuda</button>
-         <script>
-            function mostrarMensaje() {
-               const sections = document.querySelectorAll('main > section');
-               const targetSection = sections[1];
-               let ayuda = targetSection.querySelector("p");
-
-               if (!ayuda) {
-                  ayuda = document.createElement("p");
-                  ayuda.textContent = "Pulse en una tarjeta y luego pulse en otra para formar parejas. Si falla tendrá un tiempo para memorizar.";
-                  const h3 = targetSection.querySelector("h3"); 
-                  targetSection.insertBefore(ayuda, h3); 
-               } else {
-                  ayuda.remove();
-               }
-            }
-        </script>
-         <h3> Juego de memoria</h3>
-         <script>
-            var memoria=new Memoria();
-         </script>
+        <h3>Distancia a circuito random</h3>
+        <button onclick="api.toggleFullscreen(this)">Haz click para maximizar la pantalla</button>
+        <button onclick="api.mostrarCircuitoRandom()">Haz click para randomizar el circuito</button>
+      </section>
+      <section>
+        <h3>Resultado:</h3>
       </section>
    </main>
+   <script>
+      var api = new Api();
+  </script>
 </body>
 
 </html>
